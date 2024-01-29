@@ -1,0 +1,1218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="utf-8">
+  		<meta name="viewport" content="width=device-width, initial-scale=1">
+  		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+ 		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+		<title>Consultio</title>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" type="text/css" href="style.css">
+    <script type="text/javascript" src="consoltio.js"></script>
+
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	
+	    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+        <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"> -->
+
+</head>
+<style>
+  .box {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  border: 5px solid;
+  border-color: orange transparent ;
+  animation: spin 1s infinite ease-out;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+</style>
+<body>
+
+  <div id="cursor" class="cursor">
+    <div class="ring">
+      <div><!--Border--></div>
+    </div>
+    <div class="ring">
+      <div><!--Pointer--></div>		
+    </div>
+  </div>
+
+
+  <header class=" headerr bg-opacity-10 " id="headbar" >
+    <nav class="nav">
+      <div class="container-fluid  nav-bar" >
+          <div class="row  nav-bar-row">
+            <div class="col-md-4 pt-2  ps-5 pb-1 ">
+              <img class="ms-5 logo-white" src="cimg/logo-white.png" width="233px " height="61px">
+              <img class="ms-5 logo-dark" src="cimg/logo-dark.png" width="233px " height="61px">
+            </div>
+            <div class="col-md-8 ps-5 nav-list">
+              <ul class="list-inline ms-5 pt-4">
+                <li class="list-inline-item  pb-4 fw-bold pe-4">Demon</li>
+                <li class="list-inline-item  pb-4 fw-bold pe-4">About Us </li>
+                <li class="list-inline-item  pb-4 fw-bold pe-4">Services</li>
+                <li class="list-inline-item  pb-4 fw-bold pe-4">Project</li>
+                <li class="list-inline-item  pb-4 fw-bold pe-4">Contact</li>
+                <li class="list-inline-item  pb-4 fw-bold pe-4">Blog</li>
+                <li class="list-inline-item  pe-3">
+                  <i class="fa fa-search" aria-hidden="true"></i>
+                </li>
+                <li class="list-inline-item  pe-3">
+                  <i class="fa fa-shopping-basket" aria-hidden="true"></i>
+                </li>
+                <li class="list-inline-item  pe-3">
+                  <i class="fa fa-bars" aria-hidden="true"></i><i class="fa fa-bars" aria-hidden="true"></i>
+
+                </li>
+                
+              </ul>
+            </div>
+          </div>
+      </div>
+    </nav>
+ </header>
+
+ <!-- modal section -->
+ <section>
+  <!-- start loader -->
+        <!-- <div class="modal fade d-flex align-items-center justify-content-end" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+          <div class="modal-content bg-transparent border-0">
+            <div class="modal-body w-25 ">
+              <div class="box"></div>
+            </div>
+          </div>
+          </div>
+      </div> -->
+   <!-- start loader end -->
+</section>
+
+    <!-- crousel first section start -->
+    <section>
+      
+
+        <!-- Carousel -->
+            <div id="demo" class="crosel-i carousel slide" data-bs-ride="carousel">
+
+              <!-- Indicators/dots -->
+              <div class="carousel-indicators">
+                <div class="
+                crosel-indicator" ></div>
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button><div class="
+                crosel-indicator" ></div>
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button><div class="
+                crosel-indicator" ></div>
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button><div class="
+                crosel-indicator" ></div>
+                <!-- border: 2px solid red;
+                width: 5%;
+                height: 1%;
+                margin: 1% 1% 1% -2%; -->
+            
+              </div>
+              
+              <!-- The slideshow/carousel -->
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="zooimg" src="cimg/bg-slider-01.jpg" width="1350px" height="800px">
+                    
+                </div>
+                <div class="carousel-item">
+                    <img class="zooimg" src="cimg/bg-slider-02.jpg" width="1350px" height="800px" >
+                </div>
+                <div class="carousel-item">
+                    <img class="zooimg" src="cimg/bg-slider-03.jpg" width="1350px" height="800px" >
+                </div>
+                
+              </div>
+              
+              <!-- Left and right controls/icons -->
+              <!-- <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon btn-caro"></span>
+              </button>
+              <button class="carousel-control-next " type="button" data-bs-target="#demo" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+              </button> -->
+            </div>
+            <!-- mousemove ani -->
+            <div class="mouse_ani">
+
+              <div class="parallax-wrap ">
+                <div class="imm">
+                <img src="cimg/slider-shape2.png" height="" width="">
+                </div>
+                <span value="4">
+                <img src="cimg/slider-shape4.png" >
+                </span>
+                <span value="5">
+                <img src="cimg/slider-shape3.png" >
+                </span>
+                <span value="5">
+                
+                </span>
+              
+              </div>
+            </div>
+            <div class="consoltio-text" >
+              <div class=" slider-img"><img src="cimg/slider-shape7.png"></div>
+              <h1 class=" display-2 fw-bold lh-1 text-white ms-5 mt-4 ps-5" style="z-index: 50; ">We Are Digital</h1>
+              <h1 class="market display-2 lh-1 fw-bold ms-5 ps-5  fw-bold text-warning " style="z-index: 50; ">Marketing</h1>
+              <h1 class=" agency display-2 lh-1 fw-bold ms-5 ps-5  fw-bold text-white" style="z-index: 50; ">Agency</h1>
+              <h4 class="text-white mt-4 ms-5 ps-5"><i>We'vy Been Lucky to Collaborate With</i></h4>
+              <h4 class="text-warning ms-5 ps-5"><i>a Long List of Customers</i></h4>
+              
+	            <a href="#" class="sweep-to-left mt-3">About Us   <i class="fa fa-long-arrow-right rightarr" aria-hidden="true"></i><span class="btn-cir"></span></a>
+              <div class="position-absolute img-slider-sp1">
+                <img src="cimg/slider-shape1i.png" >
+              </div>
+              <div class="position-absolute img-slider-sp6">
+                <img src="cimg/slider-shape6.png" >
+              </div>
+            
+            </div>
+    </section>
+
+<!-- web Designing flat icon section started -->
+
+    <section>
+      <div class="flex-box-container overflow-hidden ms-5 ps-5 mb-5">
+        <div class="card image-body rounded-3 me-4">
+          <div class="card-body cardi rounded-3">
+             <div class="ms-3 mt-3"><img src="cimg/cubes.png" height="58px" width="58px"></div>
+           <h4 class=" ms-3 mt-3 text-white fw-bold">Web<br>Designing</h4>
+           <h1 class=" zero-web text-warning text-end fw-bold">01</h1>
+             <div class="wrap-decription fs-5 rounded-3">
+          <h4 class=" ms-4 mt-4  fw-bold text-dark">Web<br>Designing</h4>
+          <div class="ms-4 bg-warning yellow-cont "></div>
+          <p class="lh-sm ms-4 pb-4 mt-2 text-secondary"><small class="lh-1">As a app web crawler expert, organizations adjust.</small></p>
+          <span class="circle-icon  rounded-circle bg-warning"><i class="fa fa-long-arrow-right text-white" aria-hidden="true"></i></span>
+            </div>
+          </div>
+        </div>
+        <div class="card image-body rounded-3 me-4">
+          <div class="card-body cardii rounded-3">
+             <div class="ms-3 mt-3"><img src="cimg/approved.png" height="58px" width="58px"></div>
+           <h4 class=" ms-3 mt-3 text-white fw-bold">Web & App<br>Development</h4>
+           <h1 class=" zero-web text-warning text-end fw-bold">02</h1>
+             <div class="wrap-decription fs-5 rounded-3">
+          <h4 class=" ms-4 mt-4  fw-bold text-dark">Web<br>Designing</h4>
+          <div class="ms-4 bg-warning yellow-cont "></div>
+          <p class="lh-sm ms-4 pb-4 mt-2 text-secondary"><small class="lh-1">As a app web crawler expert, organizations adjust.</small></p>
+          <span class="circle-icon  rounded-circle bg-warning"><i class="fa fa-long-arrow-right text-white" aria-hidden="true"></i></span>
+            </div>
+          </div>
+        </div>
+      
+        <div class="card image-body rounded-3 me-4">
+          <div class="card-body cardiii rounded-3">
+             <div class="ms-3 mt-3"><img src="cimg/find.png" height="58px" width="58px"></div>
+           <h4 class=" ms-3 mt-3 text-white fw-bold">Social Media<br>Marketing</h4>
+           <h1 class=" zero-web text-warning text-end fw-bold">03</h1>
+             <div class="wrap-decription fs-5 rounded-3">
+          <h4 class=" ms-4 mt-4  fw-bold text-dark">Social Media<br>Marketing</h4>
+          <div class="ms-4 bg-warning yellow-cont "></div>
+          <p class="lh-sm ms-4 pb-4 mt-2 text-secondary"><small class="lh-1">As a app web crawler expert, organizations adjust.</small></p>
+          <span class="circle-icon  rounded-circle bg-warning"><i class="fa fa-long-arrow-right text-white" aria-hidden="true"></i></span>
+            </div>
+          </div>
+        </div>
+      
+        <div class="card image-body rounded-3">
+          <div class="card-body cardiv rounded-3">
+             <div class="ms-3 mt-3"><img src="cimg/manufacture.png" height="58px" width="58px"></div>
+           <h4 class=" ms-3 mt-3 text-white fw-bold">Online Media<br> Marketing</h4>
+           <h1 class=" zero-web text-warning text-end fw-bold">04</h1>
+             <div class="wrap-decription fs-5 rounded-3">
+          <h4 class=" ms-4 mt-4  fw-bold text-dark">Web<br>Designing</h4>
+          <div class="ms-4 bg-warning yellow-cont "></div>
+          <p class="lh-sm ms-4 pb-4 mt-2 text-secondary"><small class="lh-1">As a app web crawler expert, organizations adjust.</small></p>
+          <span class="circle-icon  rounded-circle bg-warning"><i class="fa fa-long-arrow-right text-white" aria-hidden="true"></i></span>
+            </div>
+          </div>
+        </div>
+        
+      
+      </div>
+    </section>
+
+    <!-- web Designing flat icon section ended -->
+<!-- we always section started -->
+
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <div>
+          <div class="d-flex text-center">
+            <img class="tilt" src="cimg/about1.png" width="433px" height="430px">
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="d-flex">
+          <div class="about-cont  bg-warning"></div><div class=" fw-bolder ms-3">About Us</div>
+          
+        </div>
+        <div class="lh-1 mt-2 we-text">
+          <span class="display-5 lh-1 fw-bold">We always provied </span>
+          <cite class="display-5 fw-bold lh-1 text-warning">best<br>features to Clients</cite>
+        </div>
+        <div class="d-flex border-bottom pb-4">
+          <div class=" "><div class=" text-warning pt-3 fs-1 fw-bolder p-2 pb-3">C</div><div class="onsultio text-secondary fs-5">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;onsultio has been optimized to give &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;your visitors the best experience in terms of UX/UI, with a unique design to deliver.</div></div>
+          <div class="pt-4"><img src="cimg/Capture.PNG"></div>
+        </div>
+        <div class="d-flex">
+          <div class="d-flex p-3"><div class="p-3"><img src="cimg/link.png" height="65px" width="65px"></div><div class="fw-bold fs-5 mt-2 ">Expert<br>team<br>member </div><span class="we-border  ms-5 mt-4 "></span></div>
+          <div class="d-flex p-3 mt-2"><div class="ms-3 "><img src="cimg/ttarget.png" height="69px" width="69px"></div><div class="fw-bold fs-5 mt-2 ms-3">Marketing<br>facilities</div></div>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- we always ection ended -->
+<!-- we provide section started -->
+<section class="mt-5 pt-5">
+  <div class="container-fluid bg-img-provide">
+    <div class="row">
+      <div class="col-md-3 ">
+        <div class="d-flex mt-5 pt-5 ms-5 ps-1">
+          <div class="services-line bg-warning "></div>
+          <div class="fw-bold fs-5 ms-3">Services</div>
+        </div>
+        <div class=" lh-sm display-5 fw-bold ms-5 ps-1  ">We provide<br> the <cite class="lh-1 display-5 fw-bold text-warning">best services.</cite></div>
+        <div class=" fs-6 mt-3  ms-5 ps-1">Consultio is a design studio founded in London and expanded our services, and become.</div>
+        <div class="ms-2 mt-3 mb-5 pb-5"><a href="#" class="sweep-to-leftt mt-3 ms-5 text-white rounded-2">Services&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   <span class="btn-cirr"></span></a></div>
+
+      </div>
+      <div class="col-md-9">
+        <div class="d-flex row1-provide">
+          <div class="d-flex logo p-4">
+            <div class="position-absolute up-line bg-warning"></div>
+            <div class="rounded-2 logo-cont-provide  p-4"><img src="cimg/web-page.png" height="50px" width="50px"></div>
+            <div class="logo-branding-cont">
+              <h4 class="ms-4 fw-bold">Logo & Branding</h4>
+              <div class="ms-4 text-secondary our-services-hov overflow-hidden">
+                <P>Our purpose isto build<br>Solutions thats remove</P>
+                <div class="text-white read-hov-provide pt-4  pb-4 bg-dark">
+                  Read More<i class="fa fa-long-arrow-right ms-3 text-warning" aria-hidden="true"></i>
+                </div>
+                
+              </div>
+              
+            </div>
+            <!-- <div class="position ab"></div> -->
+            <div class="position-absolute img-web-provide ">
+              <img src="cimg/cubes.png" height="60px" width="60px">
+            </div>
+          </div>
+          
+          <div class="d-flex ms-4 logo p-4">
+            <div class="position-absolute up-line bg-warning"></div>
+            <div class="rounded-2 logo-cont-provide  p-4"><img src="cimg/web-page.png" height="50px" width="50px"></div>
+            <div class="pe-3">
+              <h4 class="ms-4 fw-bold">Pay-Per-Click</h4>
+              <p class="ms-4 text-secondary">Our purpose isto build<br>Solutions thats remove</p>
+            </div>
+          </div>
+        </div>
+        <div class="d-flex mt-4 ms-5 ps-5">
+          <div class="d-flex logo p-4 ms-4">
+            <div class="position-absolute up-line bg-warning"></div>
+            <div class="rounded-2 logo-cont-provide  p-4"><img src="cimg/web-page.png" height="50px" width="50px"></div>
+            <div class="pe-4">
+              <h4 class="ms-4 fw-bold">Web Design</h4>
+              <p class="ms-4 text-secondary">Our purpose isto build<br>Solutions thats remove</p>
+            </div>
+          </div>
+          
+          <div class="d-flex ms-4 logo p-4">
+            <div class="position-absolute up-line bg-warning"></div>
+            <div class="rounded-2 logo-cont-provide  p-4 "><img class="" src="cimg/web-page.png" height="50px" width="50px"></div>
+            <div class="pe-4">
+              <h4 class="ms-4 fw-bold">SMM</h4>
+              <p class="ms-4 text-secondary">Our purpose isto build<br>Solutions thats remove</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- we provide section ended -->
+<!-- call section started -->
+<section>
+  <div class="container-fluid call-sec">
+    <div class="d-flex">
+      <div class="cont-call  d-flex">
+        <div class="call-rangecont">
+          <div class="bg-warning call-rangei"></div>
+          <div class=" call-rangeii"></div>
+          <div class=" call-rangeiii"></div>
+        </div>
+
+        <div class="ms-3 ">
+          <div class="d-flex">
+            <div><img src="cimg/study.png" height="45px" width="45px"></div>
+            <div class="text-white fw-bolder lh-sm fs-1">105+</div>
+          </div>
+          <div class="text-secondary lh-sm fs-5">Team member</div>
+        </div>
+
+        <div class="call-rangecont ms-5 me-3">
+          <div class="bg-warning call-rangei"></div>
+          <div class=" call-rangeii"></div>
+          <div class=" call-rangeiii"></div>
+        </div>
+
+        <div class="ms-3 ">
+          <div class="d-flex">
+            <div><img src="cimg/premium-quality.png" height="45px" width="45px"></div>
+            <div class="text-white fw-bolder lh-sm fs-1">15+</div>
+          </div>
+          <div class="text-secondary lh-sm fs-5">Winning awards</div>
+        </div>
+
+        <div class="call-rangecont  ms-5 me-3">
+          <div class="bg-warning call-rangei"></div>
+          <div class=" call-rangeii"></div>
+          <div class=" call-rangeiii"></div>
+        </div>
+
+        <div class="ms-3 ">
+          <div class="d-flex">
+            <div><img src="cimg/hand-shake.png" height="45px" width="45px"></div>
+            <div class="text-white fw-bolder lh-sm fs-1">10k+</div>
+          </div>
+          <div class="text-secondary lh-sm fs-5">Completed project</div>
+        </div>
+
+        <div class="call-rangecont  ms-5 me-3">
+          <div class="bg-warning call-rangei"></div>
+          <div class=" call-rangeii"></div>
+          <div class=" call-rangeiii"></div>
+        </div>
+
+        <div class="ms-3 me-3">
+          <div class="d-flex">
+            <div><img src="cimg/chatting.png" height="45px" width="45px"></div>
+            <div class="text-white fw-bolder lh-sm fs-1">850+</div>
+          </div>
+          <div class="text-secondary lh-sm fs-5">Client’s reviews</div>
+        </div>
+
+      </div>
+      <div class="bg-warning p-4">
+        <div class="d-flex">
+          <div class=""><img class="shadow" src="cimg/Capturet.PNG" height="50px" width="50px"></div>
+          <div class="fs-5 fw-bolder lh-sm ms-4 me-3">Call for<br> help</div>
+        </div>
+        <div class="text-white fs-4 fw-bold mt-3 lh-sm">+234-13-<br>1810</div>
+
+      </div>
+    </div>
+  </div>
+</section>
+<!-- call section ended -->
+<!-- testimoniels section started -->
+<section class="">
+  <div class="container-fluid mt-5 pt-5">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="d-flex ms-3">
+          <div class="about-cont ms-5  bg-warning"></div><div class="fs-5 fw-bolder ms-3">Testimonials</div>
+          
+        </div>
+        <div class="lh-1 mt-3 ms-5 pb-3 ps-3 we-text">
+          <span class="display-5 lh-sm fw-bold">Some feedbacks </span>
+          <cite class="display-5 lh-sm fw-bold text-warning">from<br> honorable Clients</cite>
+        </div>
+
+        <div>
+          <div class="slider single-item">
+            <div class="">
+              <div class="ms-5 ps-3 mt-4 mb-4">
+                <i class="fa fa-star text-warning fa-lg" aria-hidden="true"></i>
+                <i class="fa fa-star text-warning fa-lg" aria-hidden="true"></i>
+                <i class="fa fa-star text-warning fa-lg" aria-hidden="true"></i>
+                <i class="fa fa-star text-warning fa-lg" aria-hidden="true"></i>
+                <i class="fa fa-star text-warning fa-lg" aria-hidden="true"></i>
+              </div>
+              <p class="ms-5 ps-3  pe-5 text-secondary fs-5 ">"Working with several word press themes and templates the last years, I only can say this is the best in every level. I use it for my company and the reviews that I have already are all excellent. Not only the design."</p>
+              <div class="d-flex ms-5 ps-3 mt-3">
+                <div><img class="rounded-circle" src="cimg/u-testimonial-01-80x80.jpg"></div>
+                <div class="ms-3">
+                  <h5 class="fw-bold mt-2">Joycy Thompson</h5>
+                  <p class="text-secondary">Asistant Manager</p>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div class="ms-5 ps-3 mt-4 mb-4">
+                <i class="fa fa-star text-warning fa-lg" aria-hidden="true"></i>
+                <i class="fa fa-star text-warning fa-lg" aria-hidden="true"></i>
+                <i class="fa fa-star text-warning fa-lg" aria-hidden="true"></i>
+                <i class="fa fa-star text-warning fa-lg" aria-hidden="true"></i>
+                <i class="fa fa-star text-warning fa-lg" aria-hidden="true"></i>
+              </div>
+              <p class="ms-5 ps-3  pe-5 text-secondary fs-5 ">“You deserve care that’s simple, personalized, and hassle free. Safe Insurance that’s designed to help you thrive. Usage in merchandise, clothing, and artwork. Contrary to popular belief, Lorem Ipsum is not simple.”</p>
+              <div class="d-flex ms-5 ps-3 mt-3">
+                <div><img class="rounded-circle" src="cimg/testimonial-04-80x80.jpg"></div>
+                <div class="ms-3">
+                  <h5 class="fw-bold mt-2">Pamela Jhonson</h5>
+                  <p class="text-secondary">Leadership Group</p>
+                </div>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+
+      </div>
+      <div class="col-md-6">
+        <div>
+          <div class="d-flex text-center">
+            <img class="tilt" src="cimg/testimonials-group.png" width="570px" height="456px" >
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- testimoniels section ended -->
+<!-- projects section started -->
+<section>
+  <div class="container-fluid mt-5 pt-5">
+    <div class="row bgimg-project pb-5 ">
+      <div class="col-5">
+        <div class="d-flex mt-5 pt-5 ms-3">
+          <div class="about-cont ms-5  bg-warning"></div>
+          <div class=" fw-bolder ms-3">Projects</div>
+        </div>
+        <div class="fs-1 fw-bold lh-sm ms-5 ps-3 mt-3">We are very active to</div>
+        <div class="text-warning fs-1 fw-bold lh-sm ms-5 ps-3">perform any work!</div>
+        <div class="ms-2">
+
+          <!-- accor -->
+          <div class="containera">
+            <button class="accordion fw-bold">1. Why you will choose our services?</button>
+            <div class="accordion-content ">
+              <p class="mt-2 text-secondary  ">
+              Forging relationships between multi-national cor porations, governments and global NGOs begins with connections between people.</p>
+            </div>
+          
+            <button class="accordion fw-bold">2. How can you contact us?</button>
+            <div class="accordion-content">
+              <p class="mt-2 text-secondary  ">
+              Forging relationships between multi-national cor porations, governments and global NGOs begins with connections between people.</p>
+            </div>
+          
+            <button class="accordion fw-bold">3. Why you work with us?</button>
+            <div class="accordion-content">
+              <p class="mt-2 text-secondary  ">
+              Forging relationships between multi-national cor porations, governments and global NGOs begins with connections between people.</p>
+            </div>
+          </div>
+          <!-- accor -->
+
+        </div>
+      </div>
+      <div class="col-7">
+        <div class="bg-dark ps-4 pe-4 pt-4 pb-5  slider-cont-project">
+          <div class=" autoplay slider-project">
+            <div class="">
+              <div class="bg-white shadow-project p-3" style="width: 87%;">
+                <div class="bg-slider-projecti bg-slider-hov overflow-hidden ">
+                  
+                  <div class="bg-dark cont-project-fin me-4  ps-3 pe-3 pt-1 ms-4 ">
+                    <h5 class="text-white fw-bold lh-sm ">Finance<br>Strategy</h5>
+                    <p class="text-warning lh-sm pb-2">facilitation</p>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+            <div>
+              <div class="bg-white shadow-project p-3" style="width: 87%;">
+                <div class="bg-slider-projectii bg-slider-hov" >
+                  <div class="bg-dark cont-project-fin position-absolute ps-3 pe-3 pt-1 ms-4 ">
+                    <h5 class="text-white fw-bold lh-sm ">Finance<br>Strategy</h5>
+                    <p class="text-warning lh-sm ">facilitation</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div class="bg-white shadow-project p-3" style="width: 87%;">
+                <div class="bg-slider-projectiii bg-slider-hov">
+                  <div class="bg-dark cont-project-fin position-absolute ps-3 pe-3 pt-1 ms-4 ">
+                    <h5 class="text-white fw-bold lh-sm ">Finance<br>Strategy</h5>
+                    <p class="text-warning lh-sm ">facilitation</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div class="bg-white p-3" style="width: 87%;">
+                <div class="bg-slider-projecti bg-slider-hov">
+                  <div class="bg-dark cont-project-fin position-absolute ps-3 pe-3 pt-1 ms-4 ">
+                    <h5 class="text-white fw-bold lh-sm ">Finance<br>Strategy</h5>
+                    <p class="text-warning lh-sm ">facilitation</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div class="bg-white p-3" style="width: 87%;">
+                <div class="bg-slider-projectii bg-slider-hov">
+                  <div class="bg-dark cont-project-fin position-absolute ps-3 pe-3 pt-1 ms-4 ">
+                    <h5 class="text-white fw-bold lh-sm ">Finance<br>Strategy</h5>
+                    <p class="text-warning lh-sm ">facilitation</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div class="bg-white p-3" style="width: 87%;">
+                <div class="bg-slider-projectiii bg-slider-hov">
+                  <div class="bg-dark cont-project-fin position-absolute ps-3 pe-3 pt-1 ms-4 ">
+                    <h5 class="text-white fw-bold lh-sm ">Finance<br>Strategy</h5>
+                    <p class="text-warning lh-sm ">facilitation</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="p-4 d-flex">
+            <div class="bg-warning project-sli-underi"></div>
+            <div class="project-sli-under  bg-secondary"></div>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- projects section ended -->
+<!-- our mission section started -->
+<section>
+  <div class="container-fluid">
+    <div class="row bgimg-our ">
+      <div class="d-flex pt-5">
+        <div class="pt-5">
+          <!-- tab -->
+          <div class=" pt-5 ps-5 pe-5 d-flex align-items-start">
+            <ul class="tabb tabb-pills flex-column tabb-pills  border-3 me-3 align-items-end" id="pills-tab" role="tablist">
+              <li class="tabb-item" role="presentation">
+                <button class="tabb-link fs-4 fw-bold d-flex active position-relative" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true"><div class="rounded-circle text-center shadow tab-icon"><img class="" src="cimg/cutted-pole-flag.png" height="35px" width="35px"></div><p class="pt-2 ms-3">Our Mission</p></button>
+              </li>
+              <li class="tabb-item" role="presentation">
+                <button class="tabb-link fs-4  fw-bold d-flex position-relative" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false"><div class="rounded-circle text-center shadow tab-icon"><img class="" src="cimg/vision.png" height="35px" width="35px"></div><p class="pt-2 ms-3">Our vision</p></button>
+              </li>
+              <li class="tabb-item" role="presentation">
+                <button class="tabb-link fs-4 fw-bold d-flex position-relative" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false"><div class="rounded-circle text-center shadow tab-icon"><img class="" src="cimg/philosophy.png" height="35px" width="35px"></div><p class="pt-2 ms-3">Phiosophy</p></button>
+              </li>
+            </ul>
+            <div class="tab-content shadow p-4 bg-white " id="pills-tabContent">
+              <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+                <p class="text-secondary ms-3 mt-2 me-3 fs-6 lh-lg">Over more than 20 years, we’ve foste red trusted relationships across gover
+                  nment, industry and global forums. We adapt our delivery to the way your work, whether as an exter To provide consultancy for preparing of all sorts of corporate.</p>
+               </div>
+              <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+                <p class="text-secondary ms-3 mt-2 me-3 fs-6 lh-lg">Forging relationships between multi to national corporations, governments and global NGOs begins with connections between people. Design studio founded in London and expanded our services, and become a multinational firm, offering services.</p>
+              </div>
+              <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
+                <p class="text-secondary ms-3 mt-2 me-3 fs-6 lh-lg">Over more than 20 years, we’ve foste red trusted relationships across gover
+                  nment, industry and global forums. We adapt our delivery to the way your work, whether as an exter To provide consultancy for preparing of all sorts of corporate.</p>
+                <!-- <p>Please check our more design @ <a target="_blank" href="https://codepen.io/Gaurav-Rana-the-reactor">Codepen</a></p> -->
+              </div>
+            </div>
+          </div>
+           <!-- tab -->
+        </div>
+        <div>
+          
+<div class="wrapper">
+  <div class="video-main">
+    <div class="promo-video">
+      <div class="waves-block">
+        <div class="waves wave-1"></div>
+        <div class="waves wave-2"></div>
+        <div class="waves wave-3"></div>
+      </div>
+    </div>
+    <div class="video video-popup mfp-iframe" data-lity><img src="cimg/play-button-arrowhead.png" height="17px" width="17px"></div>
+  </div>
+</div>
+        </div>
+      </div>
+      <div class="d-flex ">
+        <div class="ms-5 ps-3">
+          <h1 class="fs-1 ms-3 fw-bold">Essential<br> business</h1>
+          <h1 class="fs-1 ms-3 fw-bold text-warning">skills.</h1>
+        </div>
+        <div style="width: 370px;">
+          <div class="ms-3  pt-3 progress-etc"><span class="fw-bold me-4 pe-3">Social media marketing</span><span class="ms-5 progress-text bg-dark rounded-1  text-white">80%</span></div>
+								<div class="progress ms-3" >
+  									<div class="progress-bar rounded-3 bg-warning border border-none rounded-0"  role="progressbar" aria-valuenow="1" aria-valuemin="0" aria-valuemax="40" style="width: 80%;">
+  						 	 
+ 									 </div>
+								</div>
+                <div class="ms-3  pt-3 progress-etc"><span class="fw-bold pe-4 me-5">Social media marketing</span>&nbsp;&nbsp;<span class="ms-5 progress-text bg-dark rounded-1  text-white">90%</span></div>
+								<div class="progress ms-3" >
+  									<div class="progress-bar rounded-3 bg-warning border border-none rounded-0"  role="progressbar" aria-valuenow="1" aria-valuemin="0" aria-valuemax="40" style="width: 90%;">
+  						 	 
+ 									 </div>
+								</div>
+                <div class="ms-3  pt-3 progress-etc"><span class="fw-bold me-2">Social media marketing</span><span class="ms-5 progress-text bg-dark rounded-1  text-white">70%</span></div>
+								<div class="progress ms-3" >
+  									<div class="progress-bar rounded-3 bg-warning border border-none rounded-0"  role="progressbar" aria-valuenow="1" aria-valuemin="0" aria-valuemax="40" style="width: 70%;">
+  						 	 
+ 									 </div>
+								</div>
+        </div>
+      </div>
+      
+      
+    </div>
+  </div>
+</section>
+<!-- our mission section ended -->
+<!-- team section started -->
+<section>
+  <div class="container-fluid mt-5 bgimg-team">
+    <div class="pb-5 ">
+      <div class="team-cont d-flex mt-5 pt-5 ">
+        <div class="about-cont   bg-warning"></div>
+        <div class="text-white fs-5 fw-bolder mt-4 ms-3">Team Member</div>
+      </div>
+      <div class="team-cont d-flex pb-5">
+        <div class="lh-sm pb-5 text-white fs-1 fw-bold">Our expert team <span class="text-warning">is</span> <br><span class="text-warning ms-lg-5">the best ever.</span></div>
+      </div>
+    </div>
+  </div>
+  <div class="team-slider-cont">
+    <div class=" multiple-items">
+      <div class="">
+        <div class="slider-cont-team ">
+          <h4 class="text-white ms-4 fw-bold donald ">Donald Jhonson</h4>
+          <p class="text-white ms-4 ">Excutive Manager</p>
+          <!-- <div class="bg-warning p-2">
+            <div class="bg-white rounded-circle p-3 d-inline">+</div>
+          </div> -->
+          
+        </div>
+      </div>
+      <div>
+        <div class="slider-cont-teami slider-cont-team">
+          <h4 class="text-white ms-4 fw-bold donald ">Anel smith</h4>
+          <p class="text-white ms-4 ">Senior director</p>
+        </div>
+      </div>
+      <div>
+        <div class="slider-cont-teamii slider-cont-team">
+          <h4 class="text-white ms-4 fw-bold donald ">Kathleen smith</h4>
+          <p class="text-white ms-4 ">Excutive Manager</p>
+        </div>
+      </div>
+      <div>
+        <div class="slider-cont-teamiii slider-cont-team">
+          <h4 class="text-white ms-4 fw-bold donald ">Anel smith</h4>
+          <p class="text-white ms-4 ">Associative Manager</p>
+        </div>
+      </div>
+      <div>
+        <div class="slider-cont-teamiv slider-cont-team">
+          <h4 class="text-white ms-4 fw-bold donald ">Brad smith</h4>
+          <p class="text-white ms-4 ">Exicutive Manager</p>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</section>
+<!-- team section ended -->
+<!-- started from section started -->
+<section>
+  <div class="container mt-5 pt-5">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="d-flex mt-5 ">
+          <div>
+            <div class=" home-started bg-dark text-center pt-3 p-2">
+              <img src="cimg/home.png" height="30px" width="30px"> 
+            
+            
+            </div>
+            <p class="text-secondary pt-3">3556 Hartford Way Vlg,<br>Mount Pleasant, SC,</p>  
+
+          </div>
+          <div class="ms-4">
+            <div class=" home-started bg-dark text-center pt-3 p-2">
+              <img src="cimg/telephone.png" height="30px" width="30px"> 
+            
+            
+            </div>
+            <p class="text-secondary pt-3">3556 Hartford Way Vlg,<br>Mount Pleasant, SC,</p>  
+
+          </div>
+          <div class="ms-4">
+            <div class=" home-started bg-dark text-center pt-3 p-2">
+              <img src="cimg/world.png" height="30px" width="30px"> 
+            
+            
+            </div>
+            <p class="text-secondary pt-3">3556 Hartford Way Vlg,<br>Mount Pleasant, SC,</p>  
+
+          </div>
+        </div>
+        <h3 class="fw-bold mt-4 mb-5  ">Send messege:</h3>
+        <table cellpadding="9px" style="margin-left: -10px;">
+          <tr>
+            <td>
+              <input type="text" placeholder="Name" class="form-control rounded-0 bg-light">
+
+            </td>
+            <td>
+              <input type="text" placeholder="E-mail" class="form-control rounded-0 bg-light">
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2">
+              <textarea rows="4" class="form-control rounded-0 bg-light">
+                
+              </textarea>
+            </td>
+          </tr>
+        </table>
+
+        <div class="btn-started mt-3 mb-5 pb-5" ><a href="#" class="sweep-to-leftt mt-3  text-white rounded-2">Send Message <span class="btn-cirr"></span></a></div>
+
+
+      </div>
+      <div class="col-md-6">
+        <div>
+          <div><img src="cimg/about-contact.jpg"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- started from section ended -->
+<!-- pricing section started -->
+<section class="mt-5">
+  <div class="container-fluid bg-pricing">
+    <div class="row">
+      <div class=" ">
+        <div class="team-cont d-flex mt-5 pt-5 ">
+          <div class="about-cont   bg-warning"></div>
+          <div class=" fs-5 fw-bolder mt-4 ms-3">Pricing</div>
+        </div>
+        <div class="team-cont d-flex pb-5">
+          <div class="lh-sm pb-5 mt-3 fs-1 fw-bold">We offer the best  <br><span class="text-warning ms-lg-5">pricing ever! </span></div>
+        </div>
+        <div class="team-cont d-flex">
+          <div class="bg-white rounded-pill shadow d-flex p-3">
+            <div class="bg-warning rounded-pill pt-3 pb-3 ps-5 pe-5 fw-bold">
+              Monthly
+            </div>
+            <div class="fw-bold mt-3 ms-5 me-5">Yearly</div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="plans-container ms-4 d-flex">
+      <div class="basicplan-cont ms-5 shadow bg-white ">
+        <div class="container-pricing d-inline">
+          <div class="hexagon-1  d-flex team-cont"><img class="" src="cimg/idea.png" height="80px" width="80px"></div>
+        </div>
+        <h4 class="text-center fw-bold mt-4 mb-4">Basic Plan</h4>
+        <div class="d-flex ms-lg-5 ps-5">
+          <div class="fs-4 fw-bold mt-3">$</div>
+          <div class="onenine display-1 fw-bold">19</div>
+          <div class="text-secondary fs-5 lh-sm mt-5 pt-3">/month</div>
+        </div>
+        <div class="ms-5 mt-5"><i class="fa fa-check bg-warning rounded-circle p-2 text-white" aria-hidden="true"></i><span class=" ms-3 fs-pricing-cont" >Advice and Guides  </span></div>
+        <div class="ms-5 mt-3"><i class="fa fa-check bg-warning rounded-circle p-2 text-white" aria-hidden="true"></i><span class=" ms-3 fs-pricing-cont">Tools and Calulators </span></div>
+        <div class="ms-5 mt-3"><i class="fa fa-check bg-warning rounded-circle p-2 text-white" aria-hidden="true"></i><span class=" ms-3 fs-pricing-cont">Mortgage Calulator </span></div>
+        <div class="ms-5 mt-3"><i class="fa fa-check bg-warning rounded-circle p-2 text-white" aria-hidden="true"></i><span class="ms-3 fs-pricing-cont">24/7 Online Support </span></div>
+        <div class="ms-5 "> <button style="border: none;" class="btn btn-warning  btn-outline-dark btn-lg rounded-2 pt-3 pb-3 ps-5 pe-5 fs-6 fw-bold ms-5 mt-5 mb-5 mt-4">Get Started</button></div>
+      
+
+      </div>
+      <div class="basicplan-cont shadow bg-white ">
+        <div class="container-pricing d-inline">
+          <div class="hexagon-1  d-flex team-cont"><img class="" src="cimg/layers.png" height="80px" width="80px"></div>
+        </div>
+        <h4 class="text-center fw-bold mt-4 mb-4">Premium Plan</h4>
+        <div class="d-flex ms-lg-5 ps-5">
+          <div class="fs-4 fw-bold mt-3">$</div>
+          <div class="onenine fw-bold display-1">48</div>
+          <div class="text-secondary fs-5 lh-sm mt-5 pt-3">/month</div>
+        </div>
+        <div class="ms-5 mt-5"><i class="fa fa-check bg-warning rounded-circle p-2 text-white" aria-hidden="true"></i><span class=" ms-3 fs-pricing-cont" >Advice and Guides  </span></div>
+        <div class="ms-5 mt-3"><i class="fa fa-check bg-warning rounded-circle p-2 text-white" aria-hidden="true"></i><span class=" ms-3 fs-pricing-cont">Tools and Calulators </span></div>
+        <div class="ms-5 mt-3"><i class="fa fa-check bg-warning rounded-circle p-2 text-white" aria-hidden="true"></i><span class=" ms-3 fs-pricing-cont">Mortgage Calulator </span></div>
+        <div class="ms-5 mt-3"><i class="fa fa-check bg-warning rounded-circle p-2 text-white" aria-hidden="true"></i><span class="ms-3 fs-pricing-cont">24/7 Online Support </span></div>
+        <div class="ms-5 "> <button style="border: none;" class="btn btn-warning  btn-outline-dark btn-lg rounded-2 pt-3 pb-3 ps-5 pe-5 fs-6 fw-bold ms-5 mt-5 mb-5 mt-4">Get Started</button></div>
+      
+
+      </div>
+      <div class="basicplan-cont shadow bg-white ">
+        <div class="container-pricing d-inline">
+          <div class="hexagon-1  d-flex team-cont"><img class="" src="cimg/startup.png" height="80px" width="80px"></div>
+        </div>
+        <h4 class="text-center fw-bold mt-4 mb-4">Advance Plan</h4>
+        <div class="d-flex ms-lg-5 ps-5">
+          <div class="fs-4 fw-bold mt-3">$</div>
+          <div class="onenine display-1 fw-bold">80</div>
+          <div class="text-secondary fs-5 lh-sm mt-5 pt-3">/month</div>
+        </div>
+        <div class="ms-5 mt-5"><i class="fa fa-check bg-warning rounded-circle p-2 text-white" aria-hidden="true"></i><span class=" ms-3 fs-pricing-cont" >Advice and Guides  </span></div>
+        <div class="ms-5 mt-3"><i class="fa fa-check bg-warning rounded-circle p-2 text-white" aria-hidden="true"></i><span class=" ms-3 fs-pricing-cont">Tools and Calulators </span></div>
+        <div class="ms-5 mt-3"><i class="fa fa-check bg-warning rounded-circle p-2 text-white" aria-hidden="true"></i><span class=" ms-3 fs-pricing-cont">Mortgage Calulator </span></div>
+        <div class="ms-5 mt-3"><i class="fa fa-check bg-warning rounded-circle p-2 text-white" aria-hidden="true"></i><span class="ms-3 fs-pricing-cont">24/7 Online Support </span></div>
+        <div class="ms-5 "> <button style="border: none;" class="btn btn-warning  btn-outline-dark btn-lg rounded-2 pt-3 pb-3 ps-5 pe-5 fs-6 fw-bold ms-5 mt-5 mb-5 mt-4">Get Started</button></div>
+      
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+<!-- pricing section ended -->
+<!-- blog section started -->
+<section>
+  <div class="container-fluid mt-5 pt-3">
+    <div class="row ms-5 ps-5 mt-5">
+      <div class="col-6">
+        <div class=" d-flex ms-3 ">
+          <div class="about-cont shadow ms-5  bg-warning"></div>
+          <div class=" fs-5 fw-bolder ms-3 ">Blog</div>
+        </div>  
+        <div class="fs-1 fw-bold ms-5 ps-3">Learn more from our </div>
+        <div class="text-warning ms-5 ps-3 fs-1 fw-bold lh-sm">latest news</div>
+
+      </div>
+      <div class="col-6">
+        <div class="text-secondary mt-4 fs-5">Follow our latest news and thoughts which<br> focuses exclusively on design, art, vintage, and<br> also work updates.</div>
+      </div>
+    </div>
+    <div class="mt-5">
+      <div class="slider responsive ms-5 me-5 ps-4 pe-4">
+				<div>
+					<div class="me-4 pb-2">
+            <div class="bg-sl-blogi rounded-3 " >
+              <img class="rounded-3 " src="cimg/theme-13-368x254.jpg" width="100%">
+            </div>
+            <div class=" shadow-sm p-4 how-blog rounded-1 ">
+            <div class="overflow-hidden  blog-slid-cont ">
+              <div class="text-secondary"><i class="fa fa-calendar text-warning" aria-hidden="true"></i>5, nov 2019<i class="fa fa-user ms-4 text-warning" aria-hidden="true"></i>Rinnah</div>
+              <div class="blogg">
+              <div class="fs-5 fw-bold">How Stay Calm from the <br>First Time</div>
+              <div>Read More</div>
+              </div>
+            </div>
+            </div>
+          </div>
+				</div>
+				<div>
+					<div class="me-4">
+            <div class="bg-sl-blogi rounded-3 " >
+              <img class="rounded-3 " src="cimg/theme-13-368x254.jpg" width="100%">
+            </div>
+            <div class=" shadow-sm p-4 how-blog rounded-1 ">
+            <div class="overflow-hidden  blog-slid-cont ">
+              <div class="text-secondary"><i class="fa fa-calendar text-warning" aria-hidden="true"></i>5, nov 2019<i class="fa fa-user ms-4 text-warning" aria-hidden="true"></i>Rinnah</div>
+              <div class="blogg">
+              <div class="fs-5 fw-bold">How Stay Calm from the <br>First Time</div>
+              <div>Read More</div>
+              </div>
+            </div>
+            </div>
+          </div>
+				</div>
+				<div>
+					<div class="me-4">
+            <div class="bg-sl-blogi rounded-3 " >
+              <img class="rounded-3 " src="cimg/theme-13-368x254.jpg" width="100%">
+            </div>
+            <div class=" shadow-sm p-4 how-blog rounded-1 ">
+            <div class="overflow-hidden  blog-slid-cont ">
+              <div class="text-secondary"><i class="fa fa-calendar text-warning" aria-hidden="true"></i>5, nov 2019<i class="fa fa-user ms-4 text-warning" aria-hidden="true"></i>Rinnah</div>
+              <div class="blogg">
+              <div class="fs-5 fw-bold">How Stay Calm from the <br>First Time</div>
+              <div>Read More</div>
+              </div>
+            </div>
+            </div>
+          </div>
+				</div>
+				<div>
+					<div class="me-4">
+            <div class="bg-sl-blogi rounded-3 " >
+              <img class="rounded-3 " src="cimg/theme-13-368x254.jpg" width="100%">
+            </div>
+            <div class=" shadow p-4 how-blog rounded-1 ">
+            <div class="overflow-hidden  blog-slid-cont ">
+              <div class="text-secondary"><i class="fa fa-calendar text-warning" aria-hidden="true"></i>5, nov 2019<i class="fa fa-user ms-4 text-warning" aria-hidden="true"></i>Rinnah</div>
+              <div class="blogg">
+              <div class="fs-5 fw-bold">How Stay Calm from the <br>First Time</div>
+              <div>Read More</div>
+              </div>
+            </div>
+            </div>
+          </div>
+				</div>
+				<div>
+					<div class="me-4">
+            <div class="bg-sl-blogi rounded-3 " >
+              <img class="rounded-3 " src="cimg/theme-13-368x254.jpg" width="100%">
+            </div>
+            <div class=" shadow p-4 how-blog rounded-1 ">
+            <div class="overflow-hidden  blog-slid-cont ">
+              <div class="text-secondary"><i class="fa fa-calendar text-warning" aria-hidden="true"></i>5, nov 2019<i class="fa fa-user ms-4 text-warning" aria-hidden="true"></i>Rinnah</div>
+              <div class="blogg">
+              <div class="fs-5 fw-bold">How Stay Calm from the <br>First Time</div>
+              <div>Read More</div>
+              </div>
+            </div>
+            </div>
+          </div>
+				</div>
+				<div>
+					<div class="me-4">
+            <div class="bg-sl-blogi rounded-3 " >
+              <img class="rounded-3 " src="cimg/theme-13-368x254.jpg" width="100%">
+            </div>
+            <div class=" shadow p-4 how-blog rounded-1 ">
+            <div class="overflow-hidden  blog-slid-cont ">
+              <div class="text-secondary"><i class="fa fa-calendar text-warning" aria-hidden="true"></i>5, nov 2019<i class="fa fa-user ms-4 text-warning" aria-hidden="true"></i>Rinnah</div>
+              <div class="blogg">
+              <div class="fs-5 fw-bold">How Stay Calm from the <br>First Time</div>
+              <div>Read More</div>
+              </div>
+            </div>
+            </div>
+          </div>
+				</div>
+				
+			</div>
+    </div>
+  </div>
+</section>
+<!-- blog section ended -->
+<!-- get started section started -->
+<section>
+  <div class="container mt-5">
+    <div class="bg-get rounded-3 ms-5 ">
+      <div class="get-txt display-4 fw-bold text-white">Get started to make easy!</div>
+      <div class="d-flex team-cont mt-4 pb-5">
+        <div>
+          <div class=""><a href="#" class="sweep-to-leftt mt-3 ms-5 text-white rounded-2">Contact Us&nbsp;&nbsp;   <span class="btn-cirr"></span></a></div>
+        </div>
+        <div class=" ms-5 mt-2">
+          <span class="text-white fw-bold about-get ">About Us</span><i class="fa fa-long-arrow-right text-warning ms-2 get-icon" aria-hidden="true"></i>
+        </div>
+      </div>
+    </div>
+    
+    
+  </div>
+  <!-- <div class="bg-warning rounded-bottom-3 p-3 get-cont "></div> -->
+</section>
+<!-- get started section ended -->
+
+<!-- footer started -->
+<footer class="w-100"  ">
+  <div class="container-fluid bg-footer "  >
+    <div class=" d-flex">
+      <div class="ms-5 ps-5 " >
+        <div><img src="cimg/logo-dark.png" width="233px" height="61px"></div>
+        <p class="text-secondary mt-3 ">We work with a passion of taking<br> challenges and creating new ones in<br> advertising sector.</p>
+        <button  class="mt-3 fw-bold btn btn-dark btn-outline-warning text-white rounded-1  ps-3 pe-3" style="border: none;">About Us</button>
+      </div>
+      <div class="ms-5 mt-3">
+        <h3 class="fw-bold">Newsletter</h3>
+        <p class="text-secondary mt-4">Subscribe our newsletter to get our<br> latest update & news</p>
+        <div class="bg-light d-flex mt-2" >
+          <input class="bg-light border-box border-0 pt-2 pb-2 ps-3" type="email" placeholder="Your email address "><div class="d-flex team-cont plan-icon"><i class="fa fa-paper-plane-o text-white" aria-hidden="true"></i></div>
+        </div>
+        <div class="mt-3 pt-1 footer-iconi">
+          <i class="fa fa-facebook text-secondary fa-lg" aria-hidden="true"></i>
+          <i class="fa fa-twitter text-secondary fa-lg ms-3" aria-hidden="true"></i>
+          <i class="fa fa-dribbble text-secondary fa-lg ms-3" aria-hidden="true"></i>
+          <i class="fa fa-behance text-secondary fa-lg ms-3" aria-hidden="true"></i>
+        </div>
+      </div>
+      <div class="ms-5 mt-3">
+        <h3 class="fw-bold">Official info:</h3>
+        <p class="mt-2 text-secondary"><i class="fa fa-map-marker ms-2 text-warning " aria-hidden="true"></i>30 Commercial Road<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;Fratton, Australia</p>
+        <p class="mt-2 text-secondary"><i class="fa fa-phone ms-2 text-warning" aria-hidden="true"></i>1-888-452-1505</p>
+        <h6 class="fw-bold">Open Hours:</h6>
+        <p class="text-secondary mt-2">Mon – Sat: 8 am – 5 pm,<br>
+          Sunday: CLOSED</p>
+      </div>
+      <div>
+        <h3 class="fw-bold ms-5 mt-3 ps-5">Instagram</h3>
+      </div>
+    </div>
+    <div class="text-center bg-dark mt-5 p-4 w-100 text-white footer-cont">
+      2023 © All rights reserved by <span class="case">Case-Themes</span>
+    </div>
+  </div>
+  
+</footer>
+
+<!-- footer endted -->
+
+
+
+
+
+
+    <!-- slick slider js-->
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+      
+    <script type="text/javascript">
+        
+
+
+  // basic idea is as follows:
+// measure the mouse's distance from center of the image and apply a transform rotateX and rotateY of between -5deg and 5deg accordingly
+
+const image = document.querySelector(".tilt");
+
+image.addEventListener("mousemove", event => {
+const { top, bottom, left, right } = event.target.getBoundingClientRect();
+
+const middleX = (right - left) / 2;
+const middleY = (bottom - top) / 2;
+
+const clientX = event.clientX;
+const clientY = event.clientY;
+
+const offsetX = (clientX - middleX) / middleX;
+const offsetY = (middleY - clientY) / middleY;
+
+event.target.style.transform = `perspective(1000px) rotateY(${offsetX *
+  5}deg) rotateX(${offsetY * 11}deg) scale3d(1, 1, 1)`;
+});
+
+
+// slider js
+$('.single-item').slick({
+// dots: true,
+autoplay: true,
+autoplaySpeed: 2000,
+});
+
+// accordian js start
+const accordionBtns = document.querySelectorAll(".accordion");
+
+accordionBtns.forEach((accordion) => {
+  accordion.onclick = function () {
+    this.classList.toggle("is-open");
+
+    let content = this.nextElementSibling;
+    console.log(content);
+
+    if (content.style.maxHeight) {
+      //this is if the accordion is open
+      content.style.maxHeight = null;
+    } else {
+      //if the accordion is currently closed
+      content.style.maxHeight = content.scrollHeight + "px";
+      console.log(content.style.maxHeight);
+    }
+  };
+});
+
+
+$('.autoplay').slick({
+  slidesToShow: 3,
+  dots: false,
+  slidesToScroll: 1,
+  autoplay: true,
+  autoplaySpeed: 2000,
+});
+
+// multi
+
+$('.multiple-items').slick({
+  infinite: true,
+  dots: false,
+  slidesToShow: 4,
+  slidesToScroll: 3
+  
+});
+
+
+// slier
+
+$('.responsive').slick({
+  dots: true,
+  infinite: false,
+  speed: 300,
+  slidesToShow: 3,
+  slidesToScroll: 1,
+  responsive: [
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 3,
+        infinite: true,
+        dots: true
+      }
+    },
+    {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 2
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    }
+    // You can unslick at a given breakpoint now by adding:
+    // settings: "unslick"
+    // instead of a settings object
+  ]
+});
+// corsor js 
+
+$(window).mousemove(function (e) {
+	$(".ring").css(
+		"transform",
+		`translateX(calc(${e.clientX}px - 1.25rem)) translateY(calc(${e.clientY}px - 1.25rem))`
+	);
+});
+// loader js
+var myModal = new bootstrap.Modal(document.getElementById("exampleModal"));
+        myModal.show();
+    </script>
+</body>
+</html>
